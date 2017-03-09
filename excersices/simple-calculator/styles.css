@@ -1,0 +1,47 @@
+.row {
+    display: block;
+    
+    margin: 25px;
+}
+
+input {
+    margin-left: 100px;
+    border-radius: 4px;
+    margin:5px;
+    height: 30px;
+    font-family: "arial";
+    font-size: 20px;
+    color: slategray;
+}
+
+button {
+    border-radius: 4px;
+    font-family: "arial";
+    font-size: 20px;
+    color: slategray;
+}
+
+#addbtn{
+    background-color: lightcyan;
+    width: 100px;
+}
+
+
+#subbtn {
+     background-color: lightgoldenrodyellow;
+    width: 100px;
+}
+
+
+#multbtn {
+    background-color: lightcoral;
+    width: 100px;
+}
+
+span {
+    margin-left: 50px;
+    font-family: "arial";
+    font-size: 30px;
+    color: slategray;
+}
+

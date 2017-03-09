@@ -1,0 +1,114 @@
+.container{
+    
+    display: block;
+    margin: 0 auto;
+  
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(supermario256.ttf);
+}
+
+h2 {
+    margin: 20px;
+    font-family: myFirstFont;
+    font-size: 45px;
+    color: #EB1E23;
+}
+
+@media screen and (max-width: 900px) {
+    h2 {
+   
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+}
+ .yellow-top {
+   
+    margin-top: 100px;
+    height: 90px;
+    background-color: #FDCC0B;
+   
+}
+
+.red-center {
+    height: 400px;
+    background-color: #EB1E23;
+}
+
+.red-center img {
+    z-index: 1;
+    display: block;
+    margin: 0 auto;
+    resize: both;
+    height: 300px;
+    margin-top: 40px;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .red-center {
+    resize: both;
+    height: 250px;
+}
+}
+
+.textbox {
+    height: 200px;
+}
+
+h3 {
+    text-align: center;
+    font-family: myFirstFont;
+    font-size: 35px;
+    color: #EB1E23;
+}
+
+p {
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+    width: 250px;
+    text-align: center;
+    font-family: arial-black;
+    font-size: 15px;
+    color: #EB1E23;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .col-xs-5 img {
+    resize: both;
+    width: 150px;
+    height: auto;
+}
+}
+
+.yellow-bottom {
+    height: 90px;
+    background-color: #FDCC0B;
+    display: block;
+    text-align: right
+}
+
+
+#green-shroom {
+    
+    resize: both;
+    height: 55px;
+    width: auto;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .yellow-bottom img {
+    display: block;
+    margin: 0 auto;
+    margin-top:10px;
+    resize: both;
+    width: 70px;
+    height: auto;
+}

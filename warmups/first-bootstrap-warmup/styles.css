@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+}
+
+#button-1 {
+    background-color:antiquewhite;
+    color: brown;
+}
+
+
+#button-2 {
+    background-color:lightblue;
+    color: darkgreen;
+}
+
+#button-3 {
+    background-color:lightcoral;
+    color: darkred;
+}
+

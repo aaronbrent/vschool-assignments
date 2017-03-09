@@ -1,0 +1,45 @@
+body {
+    font-family: "Times", sans-serif;
+    color: black;
+}
+
+.navbar li {
+    display: inline-block;
+    color: #A9E0FF;
+    background-color: #7B7E7F;
+    border-radius: 10%;
+    width: 30%;
+    text-align: center;
+
+ }
+
+.welcome {
+    text-decoration: underline;
+    color: #2C627F;
+    text-align: center;
+
+}
+
+.code-photo {
+    max-width: 500px;
+    float: center;
+    padding: 20px;
+    border: 5px;
+    background-color: #C5C9CC;
+    border-radius: 3%
+}
+
+.list {
+    clear: both;
+    font-size: 20px;
+}
+
+.fake-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+p {
+    font-size: 18px;
+
+}
