@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="mainCtrl">
+<!--   {{test}}-->
+    <div class='input-bar'>
+      <h1>Cartoon List</h1>
+       <input type="text" placeholder="Image URL" ng-model="toon.imgUrl">
+       <input type="text" placeholder="Image Title" ng-model="toon.title">
+       <input type="text" placeholder="Image description" ng-model="toon.description">
+       <button id="sub-btn" ng-click="addToon(toon)">Add cartoon</button>
+   </div>
+   
+   <div class="toon-panel" ng-repeat="toon in theList">
+       <p>Title: {{toon.title}}</p>
+       <img id="toons" ng-src="{{toon.imgUrl}}" alt="">
+       <p>Description: {{toon.description}}</p>
+   </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>

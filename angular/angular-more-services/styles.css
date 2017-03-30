@@ -1,0 +1,38 @@
+h1 {
+    font-family: 'Muli', sans-serif;
+    color: white;
+}
+.input-bar{
+    text-align: center;
+    height: 100px;
+    background-color: #3BB4AB;
+}
+
+img{
+    
+    text-align: center;
+    width: 300px;
+}
+
+#sub-btn{
+    
+    border-radius: 5px;
+    border: none;
+    color: #63E793;
+    background-color: #B43BA4;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+p{
+    font-family: 'Muli', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.toon-panel {
+    background-color: #6B817F;
+    text-align: center;
+}
