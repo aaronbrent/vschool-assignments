@@ -7,21 +7,23 @@ var lyrics = ["This", "hit", "that", "ice", "cold",
               "the", "city", "Got", "Chucks", "on", 
               "with", "Saint", "Laurent", "Gotta", "kiss", "myself", "I'm", "so", "pretty"];
 
-//function printThisArray (lyrics){
-//    var spaceString = lyrics.join (' ');
-//    console.log (spaceString);
-//    }
-//
-//console.log(printThisArray(lyrics));
+//First function
 
-//second function
+function printThisArray (lyrics){
+    var spaceString = lyrics.join (' ');
+    console.log (spaceString);
+    }
 
-//function printReverse (lyrics){
-//    var lyrics = lyrics.reverse();
-//    console.log(lyrics.join (" "));
-//    }
-//
-//console.log(printReverse(lyrics));
+console.log(printThisArray(lyrics));
+
+//Second function
+
+function printReverse (lyrics){
+    var lyrics = lyrics.reverse();
+    console.log(lyrics.join (" "));
+    }
+
+console.log(printReverse(lyrics));
 
 //Third function
 
