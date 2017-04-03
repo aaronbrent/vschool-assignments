@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body ng-controller="mainController">
+   <div class="container col-xs-12 col-lg-12">
+       <div class="head col-xs-12 col-lg-12">
+           <input type="text" ng-model="newPost.title" placeholder="Title">
+           <input type="text" ng-model="newPost.imgUrl" placeholder="Image URL">
+           <input type="text" ng-model="newPost.description" placeholder="Description">
+           <button type="button" ng-click="submitBtn(newPost)">Submit</button>
+           
+       </div>
+       <div class="row col-xs-12 col-lg-12" ng-repeat="post in posts">
+           <div class="posts col-xs-12 col-lg-12">
+               <h3>{{post.title}}</h3> <img ng-src="{{post.imgUrl}}" alt=""><p>{{post.description}}</p>
+           </div>
+       </div>
+       
+   </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>

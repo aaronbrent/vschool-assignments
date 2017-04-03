@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+}
+
+img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-left: 20px;
+}
+
+a {
+    margin-top: 30px;
+    padding: 20px;
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+}
+
+nav {
+    text-decoration: none;
+    height: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #111;
+}
+
+.container > img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+}
+
+#washington-flag {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body ng-controller="myCntrl">
+   
+    <div class="badge center-block col-xs-12 col-lg-12">
+      <form name="personForm" novalidate>
+       <div class="row col-xs-12 col-lg-12">
+            <input class='inputs' type="text" placeholder="First Name" ng-model="newPerson.firstName" ng-minlength="3" required>
+            <input class='inputs' type="text" placeholder="Last Name" ng-model="newPerson.lastName" ng-minlength="3" required>
+        </div>
+        <div class="row col-xs-12 col-lg-12">
+            <input class='inputs' type="email" placeholder="Email" ng-model="newPerson.email">
+            <input class='inputs' type="text" placeholder="Place of birth" ng-model="newPerson.birthPlace">
+        </div>
+        <div class="row col-xs-12 col-lg-12">
+            <input class='inputs' type="tel" placeholder="Phone" ng-model="newPerson.phone" ng-minlength="10" required>
+            <input class='inputs' type="text" placeholder="Favorite Food" ng-model="newPerson.favFood">
+        </div>
+        <div class="row col-xs-12 col-lg-12">
+            <input class='inputs' id="about-you" type="text" placeholder="Tell us about yourself" ng-model="newPerson.aboutYou">
+        </div>
+        <div class="row col-xs-12 col-lg-12">
+            <button ng-disabled="personForm.$invalid" id="submitBtn" type="button" ng-click="submitInfo(newPerson)">Submit</button>
+        </div>
+        </form>
+    </div>
+    
+    
+<!--    <div ng-show="person">-->
+        <div class="badge panel-default center-block col-xs-12 col-lg-12" ng-repeat="person in people">
+          <div class="badge-head  col-xs-12 col-lg-12"><h3>Badge:</h3></div>
+           <div class="row col-xs-12 col-lg-12">
+             
+              <div class="badge-print col-xs-6 col-lg-6">
+                  <h4>Name: {{person.firstName}}
+                   {{person.lastName}}</h4>
+               </div>
+               <div class="badge-print col-xs-6 col-lg-6">
+                   <h4>Phone: {{person.phone}}</h4>
+               </div>
+            </div>
+            <div class="row col-xs-12 col-lg-12">
+                <div class="badge-print col-xs-6 col-lg-6">
+                    <h4>Place of birth:  {{person.birthPlace}}</h4>   
+                </div>
+                <div class="badge-print col-xs-6 col-lg-6">
+                    <h4>Favorite food:  {{person.favFood}}</h4>    
+                </div>
+            </div>
+            <div class="badge-print row col-xs-6 col-lg-6">
+                <h4>Email:  {{person.email}}</h4>
+            </div>
+            <div class="badge-print center-block col-xs-12 col-lg-12" id="about-box">
+                <h4>{{person.aboutYou}}</h4>    
+            </div>
+            
+    </div>
+    
+        
+<!--    </div>-->
+    
+    <script src="app.js"></script>
+</body>
+</html>

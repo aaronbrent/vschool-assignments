@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>\<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> </head>
+
+<body ng-controller="mainCtrl">
+   
+    <div class="blue">
+       <h1>Team Blue</h1>
+        <h3>Score: {{blueCount}}</h3>
+        <button id="blue-button" name="blueButton" ng-click="blueButton(blueCount)">click Me</button>
+    </div>
+    <div class="red">
+       <h1>Team Red</h1>
+        <h3>Score: {{redCount}}</h3>
+        <button id="red-button" name="redButton" ng-click="redButton(redCount)">click Me</button>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="services.js"></script>
+</body>
+
+</html>

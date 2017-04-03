@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="yodaApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="mainCtrl">
+    <div class="col-lg-6 col-lg-offset-3 text-center">
+       <h1>Yoda speach translator</h1>
+       <input type="text" placeholder="Enter the text to translate" ng-model="inputText">
+       <button ng-click="subBtn(inputText)">Submit</button>
+       <div class="response">
+       <h5>Response:</h5>
+       <p>{{translated}}</p>
+       </div>
+   </div>
+    <script src="app.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>

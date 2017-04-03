@@ -1,0 +1,52 @@
+/*
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+*/
+.toDoPics{
+    resize: both;
+    height: auto;
+    width:200px;
+}
+
+#check{
+    display: inline-block;
+}
+
+#complete{
+    display: inline;
+}
+
+.strike{
+    text-decoration: line-through;
+    color: red;
+}
+
+.head{
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    text-align: center;
+}
+
+button{
+    width: 70px;
+    border-radius: 5px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#subBtn{
+    margin-top:10px;
+}
+
+#delBtn{
+/*    font-family: impact;*/
+    color: white;
+    background-color: darkseagreen;
+}
+
+.posts {
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    background-color: lightgray
+}

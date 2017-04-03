@@ -1,0 +1,56 @@
+.badge{
+    margin: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 90%;
+    height: 500px;
+}
+
+ .inputs {
+     color: black;
+    border: 2px solid black;
+    margin: 20px;
+    width: 40%;
+}
+
+#submitBtn{
+    width: 60px;
+    border-radius: 3px;
+    background-color: darkgrey;
+    color: black;
+}
+
+#about-you{
+    height: 200px;
+}
+
+.badge-print{
+    text-align: left;
+    height: 70px;
+    color:black;
+}
+
+.badge-head{
+    margin-bottom: 20px;
+    text-align: left;
+    width:100%;
+    border-radius: 5px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+
+
+#about-box{
+/*    margin-left: 20px;*/
+    width: 600px;
+    border: 2px solid black;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

@@ -1,0 +1,39 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+#blue-button{
+    background-color: lightblue;
+}
+
+#red-button{
+    background-color: lightcoral;
+}
+
+.blue{
+    margin-top: 50px;
+    text-align: center;
+    height: 200px;
+}
+
+.red{
+    margin-top: 50px;
+    text-align: center;
+    height: 200px;
+}
+
+button{
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 90px;
+}
+
+.red > h1{
+    color: red;
+}
+
+.blue > h1{
+    color: blue
+}
+

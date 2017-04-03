@@ -1,0 +1,26 @@
+.head {
+    background-color: cadetblue;
+    text-align: center;
+    height: 100px;
+    
+}
+
+.head > input {
+    margin-top: 30px;
+}
+
+button {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.posts {
+    display: inline-block;
+    text-align: center;
+    margin: 0 0 auto;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}

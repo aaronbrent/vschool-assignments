@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" href="styles.css"> </head>
+
+<body ng-controller="mainCtrl">
+<!--        {{test}}-->
+   <h1>Add your favorite Pokemon!</h1>
+    <input type="text" ng-model="pokeName" placeholder="Pokemon name">
+        <button id="addBtn" ng-click="addPokemon(pokeName)">Add</button>
+        <button id="removeBtn" ng-click="removePokemon(pokeName)">Remove</button>
+    <div ng-repeat="poke in favePoke track by $index">
+        {{poke}} 
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

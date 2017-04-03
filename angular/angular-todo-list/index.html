@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Todo List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body ng-controller="mainController">
+   <div class="container col-xs-12 col-lg-12">
+       <div class="head col-xs-12 col-lg-12">
+          <h1>Add a to do:</h1>
+           <input type="text" ng-model="newTodo.title" placeholder="Title">
+           <input type="url" ng-model="newTodo.imgUrl" placeholder="Image URL">
+           <input type="text" ng-model="newTodo.description" placeholder="Description">
+           <input type="number" ng-model="newTodo.price" placeholder="Price"><br>
+           <button id="subBtn" type="submit" ng-click="submitBtn(newTodo)">Submit</button>
+        </div>
+       
+       <div class="row col-xs-12 col-lg-12" ng-repeat="todo in todos track by $index">
+           <div ng-hide="editing" class="posts col-xs-12 col-lg-12">
+              <h3 ng-class="{'strike': todo.completed}">{{todo.title}}</h3> 
+              <img class="toDoPics" ng-src="{{todo.imgUrl}}" alt="no image found">
+              <p>{{todo.description}}</p>
+              <p>$ {{todo.price}}</p>
+               <div class="row col-xs-12 col-lg-12">
+                   <input ng-model="todo.completed" id="check" type="checkbox" ng-click="edit(todo)"> 
+                   <h6 id="complete">complete</h6> <button type="button" ng-click="deleteBtn($index, todo._id)" id="delBtn">Delete</button>
+                   <button id="editBtn" type="submit" ng-click="editing = !editing">Edit</button>
+               </div>
+            </div>
+            <div ng-show="editing" class="head col-xs-12 col-lg-12">
+               <input type="text" ng-model="todo.title" placeholder={{todo.title}}>
+               <input type="url" ng-model="todo.imgUrl" placeholder={{todo.imgUrl}}>
+               <input type="text" ng-model="todo.description" placeholder={{todo.description}}>
+               <input type="number" ng-model="todo.price" placeholder={{todo.price}}><br>
+               <button id="editBtn" type="submit" ng-click="edit(todo); editing = !editing">Save changes</button>
+            </div>
+        </div>
+    </div>
+   
+    <script src="app.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>
