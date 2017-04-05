@@ -91,6 +91,7 @@
 //console.log("Today is: " + day);
 //console.log("Current time is: " + hrs +":" + mins + ":" + secs + " " + ampm);
 
+//my code
 
 function seeDate (){
   
@@ -98,10 +99,10 @@ function seeDate (){
 var date = new Date();
 var n = date.toDateString();
 var time = date.toLocaleTimeString();
-var display = "Today is: " + n  +" Current time is: " + time;
+var display = "Today is: " + n  +" \nCurrent time is: " + time;
 
 //console.log(n + ' ' + time);
-    console.log(display);
+//    console.log(display);
     
         var newElement = document.createElement("li");
         var newNode = document.createTextNode(display);
