@@ -4,6 +4,7 @@ body {
 }
 
 .navbar li {
+    text-decoration: none;
     display: inline-block;
     color: #A9E0FF;
     background-color: #7B7E7F;

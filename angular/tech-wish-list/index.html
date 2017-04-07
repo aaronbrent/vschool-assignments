@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="techApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="row nav col-xs-12 col-lg-12"> <a href="/#/desiredtech">Desired Tech</a> <a href="/#/othertech">Other Cool Tech</a></nav>
+    
+    <div class='container'>
+    <ng-view></ng-view>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="directives/directives.js"></script>
+    <script src="desiredtech/desiretech.js"></script>
+    <script src="cooltech/cooltech.js"></script>
+</body>
+
+</html>

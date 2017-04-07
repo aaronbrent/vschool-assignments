@@ -1,0 +1,23 @@
+<div ng-show="assesment" class="alert alert-success jumbotron col-xs-12 col-lg-12" role="alert">
+    <div class="container">
+        <h4>{{theCity}}:</h4>
+        <h3>It's a good day to fly</h3>
+    </div>
+</div>
+<div ng-hide="assesment" class="alert alert-danger jumbotron col-xs-12 col-lg-12" role="alert">
+    <div class="container">
+        <h4>{{theCity}}:</h4>
+        <h3>Keep your feet on the ground</h3>
+    </div>
+
+</div>
+
+<div class="i-am-centered ">
+    <div class="row">
+        <button class="btn btn-primary" ng-click="setCity('Logan')">Logan</button>
+        <button class="btn btn-primary" ng-click="setCity('Ogden')">Ogden</button>
+        <button class="btn btn-primary" ng-click="setCity('Salt_Lake_City')">Salt Lake City</button>
+        <button class="btn btn-primary" ng-click="setCity('Provo')">Provo</button>
+        <button class="btn btn-primary" ng-click="setCity('Moab')">Moab</button>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+#win-dir{
+    display: inline;    
+}
+#direction-icon{
+    margin-bottom: 7px;
+    margin-left: 20px;
+    display: inline;
+    width: 30px;
+    height: auto;
+}
+
+.weather-box >img{
+    margin-left: 46%;
+}
+.weather-box >p{
+    text-align: center;
+}
+.asses-box{
+    text-align: center;
+}
+
+.alert * h3{
+    text-align: center;
+}
+.alert * h4{
+    text-align: center;
+}
+
+.i-am-centered { 
+    margin: auto; 
+    max-width: 400px;
+}
+
+
+
+

@@ -1,0 +1,53 @@
+
+.container {
+    height: 1800px;
+    background-color: azure;
+}
+
+.square {
+    border: 10px solid;
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+   
+    
+}
+
+.blue-square {
+    border: 10px solid;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.red-square {
+    border: 10px solid;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+}
+
+.yellow-square {
+    border: 10px solid;
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+}
+
+.green-square {
+    border: 10px solid;
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}
+
+.orange-square {
+    border: 10px solid;
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+}
+
+#dj-square{
+    
+}

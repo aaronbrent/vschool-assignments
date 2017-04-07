@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='windApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container ">
+        <ul class="row nav nav-tabs col-xs-12 col-lg-12">
+            <li role="presentation" ><a href="/#/flight">Flight Assesment</a></li>
+            <li role="presentation"><a href="/#/wind">Wind Conditions</a></li>
+            <li role="presentation"><a href="/#/weather">Weather</a></li>
+        </ul>
+        <div class="container col-xs-12 col-lg-12">
+            <ng-view></ng-view>
+        </div>
+        <div class="row col-xs-12 col-lg-12">
+            
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="flight/flight.js"></script>
+    <script src="weather/weather.js"></script>
+    <script src="wind-conditions/wind.js"></script>
+    <script src="services.js"></script>
+</body>
+
+</html>

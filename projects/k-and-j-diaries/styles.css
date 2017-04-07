@@ -1,0 +1,108 @@
+body{
+    font-family: Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.logo img{
+    margin-left: none;
+    margin-top: 10px;
+}
+.logo a:hover{
+    
+    cursor: pointer;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #FFD3C3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #FFD3C3;
+}
+
+.search-bar{
+    margin-top:15px;
+    text-align: center;
+}
+
+.search-bar > input{
+   padding-left: 5px;
+   
+}
+
+.slideshow {
+    margin: none;
+    padding: none;
+    width: 100%;
+    position: relative;
+}
+.img-fluid {   
+    resize: both;
+    width: 100%;
+    height: auto;
+    position: relative; 
+    top: 40px; 
+    left: 0; 
+    right: 0; 
+}
+
+
+.email-bar{
+    float: 
+    clear: both;
+    text-align: center;
+    background-color: #FFD3C3;
+    height: 60px;
+    padding: 5px;
+/*    position: absolute; */
+}
+
+.email-bar > input{
+    margin-top: 5px;
+    width: 200px;
+}
+
+.form-control{
+    margin-top:
+}
+.left-panel{
+    position: relative;
+}
+.left-panel>img{
+    
+   width: 70%; 
+}

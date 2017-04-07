@@ -12,7 +12,7 @@ var operations = ['Addition', 'Subtraction', 'Multiplication', 'Division', 'Expo
 
 
 if (whichOperation === 0){
-    console.log("Result: " + add(firstNumber, secondNumber));
+    console.log("Result: " + add.addition(firstNumber, secondNumber));
     
 }
 if (whichOperation === 1){

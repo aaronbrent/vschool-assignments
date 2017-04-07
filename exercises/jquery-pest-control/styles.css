@@ -1,0 +1,100 @@
+.container {
+    background-image: url("http://pre15.deviantart.net/884f/th/pre/i/2006/133/9/7/idyllic_mario_by_blendmaster.png");
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+
+.col-xs-12 img {
+   
+    resize: both;
+    height: 150px;
+}
+
+.row {
+   
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div h1 {
+    color: #fff;
+    font-size: 35px;
+    font-family: arial-black, sans-serif;
+}
+
+#output {
+    font-size: 65px;
+    font-family: arial-black;
+    color: #fff;
+}
+
+.names {
+    color:#fff ;
+    font-size: 25px;
+    font-family: arial-black;
+   
+}
+
+form input {
+    color: black;
+    text-align: right;
+    border-color: red;
+    margin-top: 12px;
+    resize: both;
+    width: 150px;
+}
+
+footer {
+    padding-top: 90px;
+    font-family: arial-black;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.col-sm-4 img {
+   
+    margin-top: 35px;
+    resize: both;
+    height: 200px;
+    width: auto;
+    
+}
+
+#submit {
+    border-color: black;
+    background-color: red;
+    font-family: arial-black;
+    font-size:20px;
+    color: white;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+    }
+
+#nightMode {
+    background-color: black;
+    font-family: arial-black;
+    font-size:20px;
+    color: yellow;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#dayMode {
+    visibility: hidden;
+    background-color: yellow;
+    font-family: arial-black;
+    font-size:20px;
+    color: black;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+}

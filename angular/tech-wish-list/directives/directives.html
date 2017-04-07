@@ -1,0 +1,5 @@
+<div class="panel" ng-repeat="item in items">
+    <h2>Name: {{ item.name }}</h2>
+    <img src="{{ item.image }}" />
+    <h4>Price: {{ item.price | currency: "€ "}}</h4>
+</div>

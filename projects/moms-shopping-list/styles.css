@@ -1,0 +1,51 @@
+html { 
+  background: url(http://hbu.h-cdn.co/assets/16/15/768x512/gallery-1460562543-wegmans-produce.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container{
+    border-radius: 4px;
+    background-color:  rgba(244, 241, 253, 0.66);
+    height:90%
+}
+
+h1 {
+    padding:20px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+/*    color: #3F5E7A;*/
+/*    font-family: 'Open Sans', sans-serif;*/
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+input {
+    text-align: center;
+    border: 2px solid #634F70;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;     
+}
+
+button {
+/*    background-color: #FFD978;*/
+    border-radius: 4px;
+    font-size: 15px;
+    padding 3px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.input-box{
+    text-align: center;
+}
+
+#btn{
+    width:80px;
+}

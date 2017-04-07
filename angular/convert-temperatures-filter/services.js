@@ -12,6 +12,7 @@ app.service("darkSky", function($http){
     this.getWeather = function (){
         var weather = {};
            return $http.jsonp('https://api.darksky.net/forecast/0f6e26b120844dbab5ad2a865c461112/40.7608,-111.8910' + "?callback=JSON_CALLBACK",  config).then(function (response) {
+               console.log(response.data);
             weather = response
                return weather;
                 

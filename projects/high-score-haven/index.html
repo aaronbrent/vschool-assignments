@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+   <h1>High Score Haven</h1>
+    <form>
+      <h3>Player Name:</h3>
+      <input type="text" name="player-name" id="name" required>
+       <h3>Select the game:</h3>
+              <select name="games" id="gameChoice" required>
+                  <option value="Pacman">Pac-Man</option>
+                  <option value="Pong">Pong</option>
+                  <option value="Asteroids">Asteroids</option>
+                  <option value="Donkey-kong">Donkey Kong</option>
+                  <option value="Slither">Slither.io</option>
+                  <option value="Agar.io">Agar.io</option>
+                  <option value="Paper.io">Paper.io</option>
+             </select><br>
+        <h3>Date:</h3>
+        <input type="date" name="date" max="2100-12-31" id="date">
+        <h3>Score:</h3>
+        <input type="number" id="score" required><br>
+        <h3>Attach random trash talk?</h3>
+        <input type="checkbox" name="trash-talk" value="trash-talk" id="checkBox" checked> <br>
+        
+        <input type="submit" value="Submit" id="btnSubmit">
+    </form>
+    
+    <table style="width:100%" class="myTable" id="myTable">
+        <tr>
+            <th>Name</th>
+            <th>Game</th> 
+            <th>Date</th>
+            <th>Score</th>
+            <th>Message</th> 
+       </tr>
+       
+   </table>
+   </div>
+  <script src="app.js"></script>
+</body>
+</html>

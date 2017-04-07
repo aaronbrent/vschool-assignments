@@ -1,0 +1,53 @@
+form{
+    margin-left: 20%;
+}
+
+h3, h4 {
+color: gray;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h3 {
+    font-size: 15px;
+    
+}
+
+input[type="text"] {
+    height:25px;
+    width: 400px;
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+input[type="number"] {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    height:25px;
+    width: 40px;
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+
+input {
+    display: inline;
+    font-size: 15px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: gray;
+}
+
+select {
+    padding: 40px;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: gray;
+}
+
+.travellocation {
+    width: 200px;
+}
+
+#btnclick {
+    margin-top: 20px;
+    width: 100px;
+    height: 55px;
+}

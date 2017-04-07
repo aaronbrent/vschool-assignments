@@ -1,0 +1,154 @@
+html { 
+  background: url(business-time-imgs/bobby-burch-145906.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#u-a-g{
+    font-size: 16px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 12px;
+}
+
+#fb-logo{
+    resize: both;
+    height: 50px;
+    width:auto;
+}
+
+#insta-logo{
+    resize: both;
+    height: 50px;
+    width:auto;
+}
+
+.adv-list li{
+    margin-top:40px;
+    list-style-type: none;
+    margin: 20px;
+    font-size: 20px;
+}
+
+li, h1, h3, p{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+p{
+    display: inline-block;
+    font-size: 15px;
+}
+
+input {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    margin: 30px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(251, 249, 243, 0.5);
+}
+
+#nav-li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(99, 53, 23, 0.6);
+    border-radius: 4px;
+}
+
+.main-box{
+     background-color:rgba(112, 107, 96, 0.5);
+     border-radius: 4px;
+     position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     width: 50%;
+     height: 50%;
+}
+
+#mtn-logo{
+    display: inline-block;
+    float: right;
+    resize: both;
+    width: auto;
+    height: 35px;
+    margin-top: 3px;
+    margin-right: 17px;
+}
+
+footer{
+    text-align: center;
+    background-color:rgba(251, 249, 243, 0.5);
+    width:100%;
+    position:absolute;
+    bottom:0;
+}
+
+#fb-logo, #insta-logo {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 15px;
+    display: inline-block;
+}
+
+form {
+    margin: 10px;
+    margin-left: 20px;
+}
+
+#msg-txt {
+    width: 80%;
+    height: 20%;
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+    font-size: 25px;
+    margin: 5px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+    #u-a-g{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    h3{
+        font-size: 15px;
+        margin: 3px;
+    }
+    input{
+        margin-top: 15px;
+    }
+    .adv-list{
+        font-size: 15px;
+        margin:5px;
+    }
+}

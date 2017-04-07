@@ -11,3 +11,4 @@ This was an exercise to create a calculator program that takes 2 numbers and a s
 
 The main calculator app should do all the business logic (i.e. figuring out which operation to perform based on the string in the 3rd input) and the individual functions that perform the specific operations should be require()'d in from separate files, each operation in it's own file.
 
+Use at least 3 of the different module patterns

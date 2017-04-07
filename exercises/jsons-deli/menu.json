@@ -1,0 +1,62 @@
+{
+"appetizers":[
+    {
+        "name": "Cheese sticks",
+        "ingredients": ["Breading","cheese","marinara sauce"],
+        "description": "Deep fried breaded cheese sticks served with marinara dipping sauce"
+    },
+    {
+        "name": "Chicken wings",
+        "ingredients": ["Chicken", "buffalo sauce", "ranch dipping sauce"],
+        "description": "Fried chicken with buffalo sauce and ranch dipping sauce"
+    }
+],
+"cold sandwiches":[
+    {
+        "name": "Cold cut",
+        "ingredients":["ham", "turkey", "cheddar", "mayo", "sourdough"],
+        "description": "Lovely cold sandwich served with chips and a drink"
+    },
+     {
+        "name": "Vegan delight",
+        "ingredients":["mushroom", "tomato", "hummus", "cucumber", "olive", "wheat bread"],
+        "description": "A veggie sandwich on wheat bread"
+    }
+],
+"hot sandwiches":[
+    {
+        "name": "Meatball",
+        "ingredients": ["meatball", "marinara sauce", "provologne cheese"],
+        "description": "Hot meatball, marinara and cheese sandwich"
+    },
+    {
+        "name": "Panini",
+        "ingredients": ["turkey", "pesto", "cheddar cheese"],
+        "description": "hot panini sandwich right off the press" 
+    }
+],
+"desserts":[
+    {
+        "name": "Brownie",
+        "ingredients": ["chocolate", "marinara sauce", "provologne cheese"],
+        "description": "Hot chocolate brownie served with or without gelato" 
+    },
+    {
+        "name": "Gelato",
+        "ingredients": ["cream", "egg", "sugar", "milk"],
+        "description": "creamy delicious gelato" 
+    }
+],
+"drinks":[
+    {
+        "name": "soda",
+        "ingredients": ["sugar", "syrup", "co2"],
+        "description": "fizzy delicious drink"
+    },
+     {
+        "name": "coffee",
+        "ingredients": ["roasted coffee bean", "hot water", "cream", "sugar"],
+        "description": "hot fresh coffee with or without cream"
+    }
+]
+}
