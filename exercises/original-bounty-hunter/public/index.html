@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bountyHunter">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body ng-controller="bountyCtrl">
+
+    <div class="container col-xs-12 col-lg-12">
+        <div class="head col-xs-12 col-lg-12">
+            <h1>Add a bounty:</h1>
+            <input type="text" ng-model="bounty.firstName" placeholder="First Name">
+            <input type="text" ng-model="bounty.lastName" placeholder="Last Name">
+            <input type="text" ng-model="bounty.living" placeholder="living?">
+            <input type="number" ng-model="bounty.bounty" placeholder="Bounty Amount">
+            <input type="text" ng-model="bounty.type" placeholder="Jedi or Sith?"><br>
+            <button id="subBtn" type="submit" ng-click="submitBtn(bounty)">Submit</button>
+        </div>
+
+        <div class="row col-xs-12 col-lg-12" ng-repeat="bounty in bounties track by $index">
+            <div ng-hide="editing" class="posts col-xs-12 col-lg-12">
+                <h3>Name: {{bounty.firstName}} {{bounty.lastName}}</h3>
+                <p>Living: {{bounty.living}}</p>
+                <p>Bounty: {{bounty.bounty}}</p>
+                <p>Force Type: {{bounty.type}}</p>
+                <div class="row col-xs-12 col-lg-12">
+                    <button type="button" ng-click="deleteBtn($index, bounty)" id="delBtn">Delete</button>
+                    <button id="editBtn" type="submit" ng-click="editing = !editing">Edit</button>
+                </div>
+            </div>
+            <div ng-show="editing" class="head col-xs-12 col-lg-12">
+                <input type="text" ng-model="bounty.firstName" placeholder="{{bounty.firstName}}">
+                <input type="text" ng-model="bounty.lastName" placeholder="{{bounty.lastName}}">
+                <input type="text" ng-model="bounty.living" placeholder="{{bounty.living}}">
+                <input type="number" ng-model="bounty.bounty" placeholder="{{bounty.bounty}}">
+                <input type="text" ng-model="bounty.type" placeholder="{{bounty.type}}"><br>
+                <button id="editBtn" type="submit" ng-click="edit(bounty); editing = !editing">Save changes</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

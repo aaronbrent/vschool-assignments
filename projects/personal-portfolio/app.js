@@ -2,19 +2,23 @@ var app = angular.module("portfolioApp", ['ngRoute']);
 
 app.config(["$routeProvider", function ($routeProvider) {
     $routeProvider
-        .when("/flight", {
-            templateUrl: "flight/flight.html",
-            controller: "flightCtrl"
+        .when("/home", {
+            templateUrl: "home/home.html",
+            controller: "homeCtrl"
         })
-        .when("/wind", {
-            templateUrl: "wind-conditions/wind-conditions.html",
-            controller: "windCtrl"
+        .when("/projects", {
+            templateUrl: "projects/projects.html",
+            controller: "projectsCtrl"
         })
-        .when("/weather", {
-            templateUrl: "weather/weather.html",
-            controller: "weatherCtrl"
+        .when("/skills", {
+            templateUrl: "skills/skills.html",
+            controller: "skillsCtrl"
+        })
+        .when("/contact", {
+            templateUrl: "contact/contact.html",
+            controller: "contactCtrl"
         })
         .otherwise({
-            redirectTo: "/flight"
+            redirectTo: "/home"
         });
 }]);

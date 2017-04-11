@@ -9,6 +9,8 @@ app.use(bodyParser.json());
 
 app.use("/bounty", bountyRouter);
 
+app.use(express.static('public'));
+
 
 
 app.listen(3000, function () {

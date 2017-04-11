@@ -2,6 +2,8 @@ var express = require("express");
 var uuid = require('uuid/v4');
 var bountyRouter = express.Router();
 
+
+
 var bounties = [];
 var bountiesExample = [
     {
@@ -39,7 +41,7 @@ bountyRouter.route("/")
     var newBounty = req.body;
     newBounty._id = uuid();
     bounties.push(newBounty);
-    res.send(`The bounty ${req.body.firstName} has been added`);
+    res.send(newBounty);
 });
 
 bountyRouter.route("/:_id")
