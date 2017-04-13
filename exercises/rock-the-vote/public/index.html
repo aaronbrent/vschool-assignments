@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="voteApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="mainCtrl">
+    <div class="row col-xs-8 col-lg-8 col-xs-offset-2 col-lg-offset-2">
+        <div class="alert alert-info">
+            <h3>Post a new issue</h3>
+            <input class="form-control" type="text" ng-model="newIssue.title" placeholder="Issue Title">
+            <input class="form-control" type="text" ng-model="newIssue.description" placeholder="Issue Description">
+            <button class='btn btn-primary' ng-click='postIssue(newIssue)'>Post Issue</button>
+        </div>
+    </div>
+
+    <div class="container col-xs-8 col-lg-8 col-sm-offset-2 col-lg-offset-2" ng-repeat="issue in issues | orderObjectBy:'rank' track by $index">
+        <div class="jumbotron">
+            <h2>Rank: {{$index + 1}}</h2>
+            <h2>{{issue.title}}</h2>
+            <h3>{{issue.description}}</h3>
+            <!--                    <button ng-click="delPost(issue)">Delete</button>-->
+            <div class="row">
+                <button class='btn btn-success vote-button' ng-click="upVote(issue)">Up vote</button>
+                <p class="p-votes">{{issue.upVote}}</p>
+                <button class='btn btn-danger vote-button' ng-click="downVote(issue)">Down vote</button>
+                <p class="p-votes">{{issue.downVote}}</p>
+
+            </div>
+            <p>Total Votes: {{issue.upVote + issue.downVote}}</p>
+            <input class="form-control" type="text" ng-model="issue.comment" placeholder="Comment on this issue">
+            <button class='btn btn-primary' ng-click="addComment(issue, issue.comment)">Post Comment</button>
+            <div ng-repeat="comment in issue.comments track by $index">
+                <div class="well">
+                    <p>{{comment}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="services.js"></script>
+</body>
+
+</html>

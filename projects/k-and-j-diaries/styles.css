@@ -80,6 +80,7 @@ body {
 }
 
 .email-bar {
+    margin-bottom: 30px;
     clear: both;
     text-align: center;
     background-color: #FFD3C3;
@@ -179,25 +180,26 @@ p {
     border: 1px solid darkgray;
 }
 
-.gray-btn:hover{
+.gray-btn:hover {
     background-color: darkgray;
     color: white;
 }
 
 .fa {
-    
-    margin:20px 5px 10px 20px;
-    color:#FFD3C3;
+    margin: 20px 5px 10px 20px;
+    color: #FFD3C3;
 }
-.line-div{
+
+.line-div {
     margin-left: 2%;
 }
-.center-block {  
+
+.center-block {
     float: none;
     margin: 0 auto;
-}  
+}
 
-hr { 
+hr {
     display: block;
     margin-top: 1em;
     margin-bottom: 0.5em;
@@ -205,12 +207,55 @@ hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
+}
+
+.left-panel {
+    display: inline;
+}
+
+.right-panel {
+    display: inline;
+}
+
+.box {
+    margin-top: 20px;
+    border: 1px solid darkgray;
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.p-offset {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 38%;
+    width: 90px;
+    color: black;
+    background-color: white;
+    margin-top: -13px
+}
+
+.black-fa{
+    color: black;
+    text-align: center;
+}
+
+#inputSuccess3 {
+    border: none;
 } 
-.left-panel{
-    display: inline;
+
+#slide-box {
+    height: 500px;
+}
+.carousel-caption {
+    color: darkgray;
+    margin-bottom: -90px;
 }
 
-.right-panel{
-    display: inline;
+.form-control-feedback {
+    margin-top: 15px;
 }
 
+.fa-search {
+    margin-top: 10px;
+}

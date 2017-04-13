@@ -1,0 +1,13 @@
+.p-votes, h4, h2 {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+.btn{
+    margin: 10px 10px 10px 0px;
+   
+}
+input {
+    width: 300px;
+}
